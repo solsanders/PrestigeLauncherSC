@@ -18,6 +18,7 @@ contract TokenFactory is Ownable, ReentrancyGuard {
     );
 
     event FeeUpdated(uint256 oldFee, uint256 newFee);
+	
     event FundsWithdrawn(address indexed owner, uint256 amount);
 
     constructor() Ownable(msg.sender) {}
