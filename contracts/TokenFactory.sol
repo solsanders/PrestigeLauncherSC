@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract TokenFactory is Ownable {
     uint256 public fee = 10 * 1e18; // Initial fee (adjustable)
-    uint256 public constant MAX_INITIAL_SUPPLY = 1e30; 
+    uint256 public immutable MAX_INITIAL_SUPPLY = 1e30; 
 
     event TokenCreated(
         address indexed creator,
